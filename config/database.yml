@@ -4,12 +4,14 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  username: diego
+  password: password
+  port: 5432
+  host: spostgres
 
 development:
   <<: *default
   database: helpy_development
-  port: 5432
-  host: localhost
 
 test:
   <<: *default
@@ -18,5 +20,3 @@ test:
 production:
   <<: *default
   database: helpy_production
-  username: helpy
-  password: <%= ENV['helpy_DATABASE_PASSWORD'] %>

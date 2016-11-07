@@ -27,3 +27,5 @@ public/uploads
 /.ruby-version
 /.ruby-gemset
 /.rvmrc
+
+.idea/
